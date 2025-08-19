@@ -1,0 +1,71 @@
+:root {
+  --lightGreen: #46F2CE;
+  --green: #259981;
+  --yellow: #FAD037;
+  --purple: #874499;
+  --lightPurple: #C51AF2;
+  --white: #FFFFFF;
+}
+
+#header {
+  background: linear-gradient(90deg, green 0%, green 100%);
+  color: white;
+  padding: 32px 24px 20px 24px;
+  box-shadow: 0 2px 12px rgba(34, 48, 68, 0.09);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30%;
+  border-radius: 18px 18px 0px 0px;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, green 0%, lightGreen 110%);
+  color: white;
+  padding: 32px 16px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 0 0 0 18px;
+}
+
+.sidebar h2 {
+  margin-bottom: 28px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.12em;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 10px;
+  transition: background 0.2s, color 0.2s;
+  display: block;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: yellow;
+  color: var(--lightPurple);
+}
+
+
+sidebar hr {
+  border: none;
+  border-top: 1px solid #314365;
+  margin: 26px 0 18px 0;
+  width: 90%;
+}
