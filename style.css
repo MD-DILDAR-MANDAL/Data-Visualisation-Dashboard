@@ -14,6 +14,7 @@
   box-shadow: 0 2px 12px rgba(34, 48, 68, 0.09);
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 30%;
   border-radius: 18px 18px 0px 0px;
@@ -63,9 +64,92 @@
 }
 
 
-sidebar hr {
+.sidebar hr {
   border: none;
-  border-top: 1px solid #314365;
+  border-top: 1px solid yellow;
   margin: 26px 0 18px 0;
   width: 90%;
+}
+
+.add-dataset {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.add-dataset label {
+  font-size: 1em;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+
+.add-dataset input[type="file"] {
+  display: none;
+  /* color: white;
+  background: none;
+  font-size: 0.92em;
+  padding: 2px 0 0 0; */
+}
+
+.custom-file-label {
+  display: inline-block;
+  background: var(--lightPurple);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 3px;
+  transition: background 0.2s;
+}
+
+.custom-file-label:hover {
+  color: var(--lightPurple);
+  background: yellow;
+}
+
+.file-name {
+  word-break: break-all;
+  color: #fff;
+  font-size: 0.92em;
+  margin-top: 4px;
+  background: rgba(62, 100, 255, 0.18);
+  padding: 2px 6px 2px 2px;
+  border-radius: 4px;
+  display: block;
+  max-width: 100%;
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 0 0 14px 14px;
+    padding: 12px;
+  }
+
+  .sidebar nav ul {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+  }
+
+  .sidebar hr,
+  .sidebar h2 {
+    display: none;
+  }
+
+  .add-dataset-upload {
+    align-items: flex-end;
+  }
 }
