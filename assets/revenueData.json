@@ -1,0 +1,26 @@
+[
+    {
+        "region": "North",
+        "revenue": 10000,
+        "transactions": 120,
+        "avgOrderValue": 83.33
+    },
+    {
+        "region": "South",
+        "revenue": 8000,
+        "transactions": 95,
+        "avgOrderValue": 84.21
+    },
+    {
+        "region": "West",
+        "revenue": 7500,
+        "transactions": 78,
+        "avgOrderValue": 96.15
+    },
+    {
+        "region": "East",
+        "revenue": 6700,
+        "transactions": 64,
+        "avgOrderValue": 104.69
+    }
+]

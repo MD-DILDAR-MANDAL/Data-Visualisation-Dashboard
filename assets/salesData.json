@@ -1,0 +1,20 @@
+[
+    {
+        "date": "2025-07-01",
+        "sales": 124,
+        "orders": 30,
+        "returns": 3
+    },
+    {
+        "date": "2025-07-02",
+        "sales": 156,
+        "orders": 37,
+        "returns": 2
+    },
+    {
+        "date": "2025-07-03",
+        "sales": 100,
+        "orders": 22,
+        "returns": 4
+    }
+]

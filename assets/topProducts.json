@@ -1,0 +1,29 @@
+[
+    {
+        "productId": "A01",
+        "productName": "Widget A",
+        "category": "Gadgets",
+        "unitsSold": 50,
+        "revenue": 5000,
+        "returns": 2,
+        "rating": 4.7
+    },
+    {
+        "productId": "B02",
+        "productName": "Widget B",
+        "category": "Tools",
+        "unitsSold": 35,
+        "revenue": 3200,
+        "returns": 0,
+        "rating": 4.5
+    },
+    {
+        "productId": "C03",
+        "productName": "Widget C",
+        "category": "Gadgets",
+        "unitsSold": 30,
+        "revenue": 2950,
+        "returns": 1,
+        "rating": 4.2
+    }
+]

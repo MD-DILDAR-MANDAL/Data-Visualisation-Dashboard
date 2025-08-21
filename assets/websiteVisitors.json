@@ -1,0 +1,23 @@
+[
+    {
+        "date": "2025-07-01",
+        "visitors": 1200,
+        "uniqueVisitors": 950,
+        "pageViews": 2500,
+        "bounceRate": 0.48
+    },
+    {
+        "date": "2025-07-02",
+        "visitors": 1320,
+        "uniqueVisitors": 1020,
+        "pageViews": 2701,
+        "bounceRate": 0.44
+    },
+    {
+        "date": "2025-07-03",
+        "visitors": 1197,
+        "uniqueVisitors": 976,
+        "pageViews": 2458,
+        "bounceRate": 0.51
+    }
+]

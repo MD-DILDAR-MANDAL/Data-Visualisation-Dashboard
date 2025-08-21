@@ -1,0 +1,26 @@
+[
+    {
+        "rating": "Excellent",
+        "count": 48,
+        "avgDuration": 2.5,
+        "commentSample": "Great service!"
+    },
+    {
+        "rating": "Good",
+        "count": 32,
+        "avgDuration": 3.1,
+        "commentSample": "Fast response."
+    },
+    {
+        "rating": "Average",
+        "count": 15,
+        "avgDuration": 3.7,
+        "commentSample": "Okay overall."
+    },
+    {
+        "rating": "Poor",
+        "count": 5,
+        "avgDuration": 5.2,
+        "commentSample": "Not satisfied."
+    }
+]
