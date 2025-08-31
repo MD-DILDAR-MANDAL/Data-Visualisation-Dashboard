@@ -25,10 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     data = JSON.parse(event.target.result);
                     dashboard.innerHTML = `
-                    <div style="display:flex; gap:24px; align-items: flex-start">
-                    <canvas id ="revenueBarChart" style="width:50%; height:50%;max-width:50%; "></canvas>
-                    <canvas id ="revenuePieChart" style="width:700px; height:700px;max-width:50%; "></canvas>
-                    </div > `;
+                    <div style="display: flex; gap: 24px; align-items: flex-start; width: 100%;">
+                        <canvas id="revenueBarChart" style=" width:60%; height:50%;max-width:50%; flex: 1;"></canvas>
+                        <canvas id="revenuePieChart" style="width:50%; height:50%;max-width:50%; flex: 1;"></canvas>
+                    </div>`;
+
 
                     const region = data.map(item => item.region);
                     const revenue = data.map(item => item.revenue);
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     const barCtx = document.getElementById('revenueBarChart').getContext('2d');
 
-                    const pieCtx = document.getElementById('revenueBarChart').getContext('2d');
+                    const pieCtx = document.getElementById('revenuePieChart').getContext('2d');
 
                     new Chart(barCtx, {
                         type: 'bar',
@@ -65,6 +66,37 @@ document.addEventListener('DOMContentLoaded', () => {
                                 title: {
                                     display: true,
                                     text: 'Grouped Bar: Revenue, Transaction, Avg Order Value'
+                                }
+                            },
+                            animation: {
+                                duration: 1000,
+                                easing: 'easeInBounce'
+                            }
+                        }
+                    });
+
+                    new Chart(pieCtx, {
+                        type: 'pie',
+                        data: {
+                            labels: region,
+                            datasets: [{
+                                label: 'Revenue',
+                                data: revenue,
+                                backgroundColor: ['rgb(255, 99, 132)',
+                                    'rgb(54, 162, 235)',
+                                    'rgb(255, 205, 86)',
+                                    'rgb(0,255,0)'
+                                ],
+                                hoverOffset: 4
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: 'Revenue Distribution by Region'
                                 }
                             },
                             animation: {
