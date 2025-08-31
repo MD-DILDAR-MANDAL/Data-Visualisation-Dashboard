@@ -1,29 +1,38 @@
 [
     {
-        "productId": "A01",
-        "productName": "Widget A",
-        "category": "Gadgets",
-        "unitsSold": 50,
-        "revenue": 5000,
-        "returns": 2,
-        "rating": 4.7
+        "productId": "P01",
+        "productName": "UltraWidget X",
+        "category": "Electronics",
+        "unitsSold": 1200,
+        "revenue": 18000,
+        "returns": 800,
+        "rating": 8700
     },
     {
-        "productId": "B02",
-        "productName": "Widget B",
+        "productId": "P02",
+        "productName": "MegaTool Z",
+        "category": "Hardware",
+        "unitsSold": 950,
+        "revenue": 14000,
+        "returns": 600,
+        "rating": 7900
+    },
+    {
+        "productId": "P03",
+        "productName": "SmartGadget Pro",
+        "category": "Electronics",
+        "unitsSold": 1100,
+        "revenue": 16500,
+        "returns": 500,
+        "rating": 9100
+    },
+    {
+        "productId": "P04",
+        "productName": "HandyKit Max",
         "category": "Tools",
-        "unitsSold": 35,
-        "revenue": 3200,
-        "returns": 0,
-        "rating": 4.5
-    },
-    {
-        "productId": "C03",
-        "productName": "Widget C",
-        "category": "Gadgets",
-        "unitsSold": 30,
-        "revenue": 2950,
-        "returns": 1,
-        "rating": 4.2
+        "unitsSold": 980,
+        "revenue": 15000,
+        "returns": 400,
+        "rating": 8500
     }
 ]
